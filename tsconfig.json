@@ -1,0 +1,17 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "lib":[
+      "dom",
+      "es2017"
+    ],
+    "module": "commonjs",
+    "outDir": "lib",
+    "strict": true,
+    "target": "es2017",
+    "noUnusedLocals": true
+  }
+}

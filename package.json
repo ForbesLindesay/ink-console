@@ -1,0 +1,68 @@
+{
+  "name": "ink-console",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "description": "Render a scrollable terminal log in your ink app",
+  "keywords": [],
+  "files": [
+    "lib/"
+  ],
+  "dependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/indent-string": "^3.0.0",
+    "@types/node": "^8.0.14",
+    "chalk": "^2.0.1",
+    "indent-string": "^3.1.0",
+    "ts-ink": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "*",
+    "flowgen2": "*",
+    "husky": "*",
+    "jest": "*",
+    "lint-staged": "*",
+    "prettier": "*",
+    "ts-jest": "*",
+    "ts-node": "^3.2.1",
+    "typescript": "*"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "prepublish": "npm run build",
+    "prettier": "prettier --parser typescript --single-quote --trailing-comma all --no-bracket-spacing --write \"src/**/*.{ts,tsx}\"",
+    "prettier:check": "prettier --parser typescript --single-quote --trailing-comma all --no-bracket-spacing --list-different \"src/**/*.{ts,tsx}\"",
+    "build": "tsc && flowgen lib/**/*",
+    "test": "jest ./src --coverage",
+    "watch": "jest ./src --coverage --watch"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --parser typescript --single-quote --trailing-comma all --no-bracket-spacing --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.test.(ts|tsx|js)"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/ink-console.git"
+  },
+  "author": {
+    "name": "Forbes Lindesay",
+    "url": "http://github.com/ForbesLindesay"
+  },
+  "license": "MIT"
+}
