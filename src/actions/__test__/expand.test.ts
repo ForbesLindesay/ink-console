@@ -46,7 +46,6 @@ test('down', () => {
   };
   expect(expand(semiExpandable, {lines: 20})).toBe(semiExpandable);
 
-
   const nonPinned = {
     pinned: false,
     log: [
