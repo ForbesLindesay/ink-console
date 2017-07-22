@@ -6,6 +6,8 @@ Render a scrollable terminal log in your ink app
 [![Dependency Status](https://img.shields.io/david/ForbesLindesay/ink-console/master.svg)](http://david-dm.org/ForbesLindesay/ink-console)
 [![NPM version](https://img.shields.io/npm/v/ink-console.svg)](https://www.npmjs.org/package/ink-console)
 
+![Demo](ink-console.gif)
+
 ## Installation
 
 ```
