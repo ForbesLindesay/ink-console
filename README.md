@@ -1,5 +1,7 @@
 # ink-console
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/ink-console.svg)](https://greenkeeper.io/)
+
 Render a scrollable terminal log in your ink app
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/ink-console/master.svg)](https://travis-ci.org/ForbesLindesay/ink-console)
