@@ -18,7 +18,7 @@ export function renderDirOutputValue(
       return '[]';
     }
     if (depth === 0) {
-      return '[Array] ' + blue('(press ' + options.expandKey + ' to exand)');
+      return '[Array] ' + blue('(press ' + options.expandKey + ' to expand)');
     } else {
       return (
         '[\n' +
@@ -36,7 +36,7 @@ export function renderDirOutputValue(
       return '{}';
     }
     if (depth === 0) {
-      return '[Object] ' + blue('(press ' + options.expandKey + ' to exand)');
+      return '[Object] ' + blue('(press ' + options.expandKey + ' to expand)');
     } else {
       return (
         '{\n' +
