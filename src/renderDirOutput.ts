@@ -1,4 +1,4 @@
-import {blue} from 'chalk';
+import chalk from 'chalk';
 import {inspect} from 'util';
 import indentString = require('indent-string');
 import {DirEntry} from './LogEntry';
@@ -18,7 +18,9 @@ export function renderDirOutputValue(
       return '[]';
     }
     if (depth === 0) {
-      return '[Array] ' + blue('(press ' + options.expandKey + ' to expand)');
+      return (
+        '[Array] ' + chalk.blue('(press ' + options.expandKey + ' to expand)')
+      );
     } else {
       return (
         '[\n' +
@@ -36,7 +38,9 @@ export function renderDirOutputValue(
       return '{}';
     }
     if (depth === 0) {
-      return '[Object] ' + blue('(press ' + options.expandKey + ' to expand)');
+      return (
+        '[Object] ' + chalk.blue('(press ' + options.expandKey + ' to expand)')
+      );
     } else {
       return (
         '{\n' +

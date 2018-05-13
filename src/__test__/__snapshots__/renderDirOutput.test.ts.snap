@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`{}, depth=0 1`] = `"{}"`;
+exports[`renderDirOutput: {}, depth=0 1`] = `"{}"`;
 
-exports[`{}, depth=1 1`] = `"{}"`;
+exports[`renderDirOutput: {}, depth=1 1`] = `"{}"`;
 
-exports[`{v: {}}, depth=1 1`] = `
+exports[`renderDirOutput: {v: {}}, depth=1 1`] = `
 "{
   v: {},
 }"
 `;
 
-exports[`{v: {}}, depth=2 1`] = `
+exports[`renderDirOutput: {v: {}}, depth=2 1`] = `
 "{
   v: {},
 }"

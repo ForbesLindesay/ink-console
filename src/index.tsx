@@ -26,8 +26,8 @@ export default class LogOutput extends Component<Props, State> {
     offset: 0,
     depth: 2,
   };
-  _reset: void | (() => void);
-  _logCatcher: void | LogCatcher;
+  _reset: undefined | (() => void);
+  _logCatcher: undefined | LogCatcher;
 
   private handleKeyPress = (ch: string) => {
     switch (ch) {
@@ -62,9 +62,7 @@ export default class LogOutput extends Component<Props, State> {
           <Text bold>Log Output</Text>
         </div>
         <br />
-        <div>
-          {renderString(this.state, this.props)}
-        </div>
+        <div>{renderString(this.state, this.props)}</div>
         <br />
         <div>
           <Text>
